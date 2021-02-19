@@ -1,0 +1,127 @@
+/*CSS GENERAL DISPLAY GRID*/
+body{
+    margin: 0px;
+}
+#container{
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12% 88%;
+    /* border: 4px pink solid; */
+    font-family: 'Montserrat', sans-serif;
+}
+#droite{
+    background: url(moi.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/2/3/3;
+    width: 100%;
+    height: auto;
+    
+}
+#gauche{
+    grid-area: 2/1/3/2;
+    width: 100%;
+    height: auto;
+    padding: 70px 0px 95px 0px;
+}
+/*CSS NAVIGATION TOP A GAUCHE*/
+#navtopgauche{
+    grid-area: 1/1/2/2;
+    /* border: solid 4px green; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4vw;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#itemgauche{
+    display: flex;
+    margin-top: 1%;
+    border-bottom: rgba(30,67,134) solid 1px;
+    /* padding-bottom: -10%; */
+    margin-bottom: 7%;
+}
+#triangle{
+    display : inline-block;
+    height : 0px;
+    width : 0px;
+    border-right : 1vw solid transparent;
+    border-bottom : 1.75vw solid rgba(30,67,134,255);
+    border-left : 1vw solid transparent; 
+    /* margin-right: -330px;   */
+    /* margin-top: 46px;
+    margin-left: 30px;    */
+    margin-top: 4%;
+}
+#itemgauche p{
+    margin-left: 6px;
+}
+#itemdroite p{
+    /* display: inline; */
+    /* background-color: rgb(133, 116, 140);
+    color: white; */
+    background-color: rgba(30,67,134,255);
+    color: white;
+    font-weight: 200;
+    /* margin-top: 6px;
+    padding-top: 10px; */
+    /* margin: 2%;*/
+    padding: 5px 15px 5px 15px;
+}
+#itemdroite a:link{
+    text-decoration: none;
+}
+
+/*CSS PARTIE GAUCHE*/
+.responsive{ /*Image partie gauche*/
+    max-width: 80%;
+    height: auto;
+    margin-left: 8%;
+}
+
+/*CSS PARTIE DROITE*/
+#droite ul{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: pink solid 4px; */
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+#droite ul a{
+    margin: 0px;
+    padding-right: 3.38%;
+    padding-left: 3.7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* background: yellowgreen; */
+    /* border: orange solid 2px; */
+    list-style: none;
+    font-size: 1.6vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+#droite ul a:link{
+    /* color: white; */
+}
+#droite ul a:visited{
+    color: white
+}
+#droite ul a:hover{
+    background-color: rgba(255, 255, 255, 0.603);
+    color: rgba(30,67,134,255);
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+/* #droite ul a:visited{
+    color: white
+} */
+#droite ul a li{
+    cursor: pointer;
+}
+

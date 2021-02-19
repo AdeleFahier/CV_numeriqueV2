@@ -1,0 +1,209 @@
+/*CSS GENERAL DISPLAY GRID*/
+body{
+    margin: 0px;
+}
+#container{
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12% 88%;
+    /* border: 4px pink solid; */
+    font-family: 'Montserrat', sans-serif;
+}
+#droite{
+    /* background: url(moi2.jpg); */
+    background-color:rgba(23, 103, 114, 0.795) ;
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/2/3/3;
+    width: 100%;
+    height: auto;
+    
+}
+#gauche{
+    grid-area: 2/1/3/2;
+    width: 100%;
+    height: auto;
+    padding: 150px 0px 150px 0px;
+}
+/*CSS NAVIGATION TOP A GAUCHE*/
+#navtopgauche{
+    grid-area: 1/1/2/2;
+    /* border: solid 4px green; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4vw;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#itemgauche{
+    display: flex;
+    margin-top: 1%;
+    border-bottom: rgba(23, 103, 114, 0.973) solid 1px;
+    /* padding-bottom: -10%; */
+    margin-bottom: 7%;
+}
+#triangle{
+    display : inline-block;
+    height : 0px;
+    width : 0px;
+    border-right : 1vw solid transparent;
+    /* border-bottom : 1.75vw solid rgba(30,67,134,255); */
+    border-bottom : 1.75vw solid rgba(23, 103, 114, 0.89);
+    border-left : 1vw solid transparent; 
+    /* margin-right: -330px;   */
+    /* margin-top: 46px;
+    margin-left: 30px;    */
+    margin-top: 4%;
+}
+#itemgauche p{
+    margin-left: 6px;
+}
+#itemdroite p{
+    /* display: inline; */
+    /* background-color: rgb(133, 116, 140);
+    color: white; */
+    background-color: rgba(30,67,134,255);
+    color: white;
+    font-weight: 200;
+    /* margin-top: 6px;
+    padding-top: 10px; */
+    /* margin: 2%;*/
+    padding: 5px 15px 5px 15px;
+}
+#itemdroite a:link{
+    text-decoration: none;
+}
+
+/*CSS PARTIE GAUCHE*/
+.responsive{ /*Image partie gauche*/
+    max-width: 85%;
+    height: auto;
+    margin-left: 8%;
+    /* border: orange 2px solid; */
+    margin-bottom: 5%;
+    margin-top: 7%;
+    /* border-left: red 4px double; */
+}
+#gauche h2{
+    font-size: 1.1vw;
+    text-align: center;
+    text-transform: uppercase;
+    /* background-color: rgba(182, 46, 46, 0.158); */
+    background-color: rgba(237, 239, 243, 0.822);
+    padding-top: 1.1%;
+    padding-bottom: 1.1%;
+    margin-left: 9%;
+    margin-right: 11%;
+    /* color: rgba(30,67,134,255); */
+    /* color: white; */
+    color: rgba(30,67,134);
+    border-left: rgba(30,67,134) 4px solid;
+
+}
+/* #contact {
+    margin-top: -50px;
+} */
+#gauche p{
+    text-align: center;
+    font-size: 1.3vw;
+    display: block;
+    /* border: black 2px solid; */
+    margin-bottom: 5%;
+    /* margin-top: 1%; */
+    /* color: rgba(30,67,134,255); */
+    color: white;
+    margin-top: -1%;
+    font-weight: bold;
+}
+/* #tel{
+    background-color: rgba(182, 46, 46, 0.247);
+} */
+#italic {
+    font-style: italic;
+    font-size: 0.9vw;
+    /* border: red solid 2px; */
+    text-align: center;
+    display: block;
+    margin-top: -2%;
+    margin-bottom: 1%;
+}
+#gauche a{
+    /* color: rgba(30,67,134,255); */
+    color: white;
+    text-decoration: none;
+}
+#gauche a:hover{
+    color: rgb(17, 47, 104);
+    font-size: 1.5vw;
+}
+#oiseauresponsive{
+    max-width: 6%;
+    margin-right: 3%;
+    margin-left: -8%;
+}
+/* #blockmail{
+    margin-top: -10%;
+} */
+#inkresponsive{
+    max-width: 9%;
+    margin-right: 12%;
+    margin-left: -23%
+}
+#telresponsive{
+    max-width: 6%;
+    margin-left: -47%;
+    margin-right: 20%;
+}
+#num{
+    display: block;
+    /* border: black solid 2px; */
+    margin-top: -5%;
+    /* font-weight: bold; */
+    /* margin-top: -10%; */
+}
+
+/*CSS PARTIE DROITE*/
+#droite ul{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: pink solid 4px; */
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+#droite ul a{
+    margin: 0px;
+    padding-right: 3.38%;
+    padding-left: 3.7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* background: yellowgreen; */
+    /* border: orange solid 2px; */
+    list-style: none;
+    font-size: 1.6vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+#droite ul a:link{
+    /* color: white; */
+}
+#droite ul a:visited{
+    color: white
+}
+#droite ul a:hover{
+    background-color: rgba(255, 255, 255, 0.603);
+    color: rgba(30,67,134,255);
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+/* #droite ul a:visited{
+    color: white
+} */
+#droite ul a li{
+    cursor: pointer;
+}
